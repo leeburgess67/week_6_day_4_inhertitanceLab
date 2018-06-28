@@ -1,3 +1,5 @@
+package Staff;
+
 public abstract class Employee {
 
     private String name;
@@ -25,4 +27,11 @@ public abstract class Employee {
         return this.salary;
     }
 
+    public String getName(){
+        return this.name;
+    }
+
+    public String getNationalInsurance(){
+        return this.nationalInsurance;
+    }
 }
