@@ -10,18 +10,19 @@ public abstract class Employee {
         this.salary = salary;
     }
 
-    public void raiseSalary(double increment){
-       double increase =  (increment/100) * this.salary;
-       this.salary += increase;
+    public void raiseSalary(double increment) {
+        double increase = (increment / 100) * this.salary;
+        this.salary += increase;
     }
 
-    public void payBonus(){
+    public void payBonus() {
         double bonus = this.salary * .01;
         this.salary += bonus;
     }
 
 
-    public double getSalary(){
+    public double getSalary() {
         return this.salary;
     }
+
 }
