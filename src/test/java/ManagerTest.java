@@ -9,7 +9,7 @@ public class ManagerTest {
 
     @Before
     public void setup() {
-        manager = new Manager("Johnny Smith", "Footwear", "JG875748573D", 25000);
+        manager = new Manager("Johnny Smith", "Footwear", "JG875748573D", 25000.00);
     }
 
     @Test
@@ -18,6 +18,9 @@ public class ManagerTest {
     }
 
     @Test
-    public void
+    public void canRaiseSalary(){
+        manager.raiseSalary(1.00);
+        assertEquals(25250.00,manager.getSalary(), 1);
+    }
 
 }

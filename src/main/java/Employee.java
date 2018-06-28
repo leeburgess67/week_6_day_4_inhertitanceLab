@@ -11,8 +11,8 @@ public abstract class Employee {
     }
 
     public void raiseSalary(double increment){
-        this.salary += increment;
-
+       double increase =  (increment/100) * this.salary;
+       this.salary += increase;
     }
 
     public void payBonus(){
@@ -21,4 +21,7 @@ public abstract class Employee {
     }
 
 
+    public double getSalary(){
+        return this.salary;
+    }
 }
